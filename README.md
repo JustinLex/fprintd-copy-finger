@@ -16,14 +16,14 @@ This tool is just convenient if you happen to use your fingerprint sensor in a w
 This code comes with no warranty, and I take no responsibility for you bricking your fingerprint sensor or your authentication configuration getting borked.
 
 ## How to use
-1. Clone the repo on your machine
+1. **Clone the repo on your machine**
 
 ```
 git clone https://github.com/JustinLex/fprintd-copy-finger.git
 cd fprintd-copy-finger/
 ```
 
-2. Install the system package and python dependencies, preferably in a venv.
+2. **Install the system package and python dependencies, preferably in a venv.**
 
 This script uses the `PyGOgject` library to interface with fprintd, and `PyGObject` has a number of build dependencies that 
 you will have to install on with your system package manager. The command example below shows the packages that you will need if you are using Fedora.
@@ -36,10 +36,10 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Find the fingerprint file that you want to copy.
+3. **Find the fingerprint file that you want to copy.**
 
 By default, fingerprint files are stored under `/var/lib/fprint/{user}/{vendor name}/{sensor id}/{finger id}`, and can only be read by root.
 
-4. Run the script as root, pointing it at the fingerprint file that you want to clone, and the user you want to copy the fingerprint to.
+4. **Run the script as root, pointing it at the fingerprint file that you want to clone, and the user you want to copy the fingerprint to.**
 
 e.g. `sudo python copy-finger.py /var/lib/fprint/jlh/synaptics/7c3928dbc3a2/7 justin`
