@@ -6,7 +6,9 @@ Small python script for copying a registered finger from one user to another on 
 ## Some notes
 This script was written for and tested on a Lenovo Thinkpad P14s Gen 2 (AMD), which uses a "Synaptics, Inc. Prometheus MIS Touch Fingerprint Reader", with the USB id `06cb:00bd`. I was running Fedora 35 with `fprintd 1.94.1-1.fc35`. 
 
-This method of copying the fingerprint may not work on other fingerprint sensors, especially if libfprint stores the fingerprint data differently with that sensor. Let me know how it goes if you try this on any other fingerprint sensor.
+This method of copying the fingerprint may not work on other fingerprint sensors, especially if libfprint stores the fingerprint data differently with that sensor. 
+
+Please let me know how it goes if you try this on any other fingerprint sensor!
 
 This script is completely unsupported by libfprint. The fact that duplicate fingerprint records are not allowed was 
 [a conscious decision by the libfprint developers](https://gitlab.freedesktop.org/libfprint/fprintd/-/blob/master/src/device.c#L2226). 
