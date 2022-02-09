@@ -1,0 +1,2 @@
+click~=8.0
+PyGObject~=3.42
